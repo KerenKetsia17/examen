@@ -56,7 +56,7 @@ Le frontend est développé avec React.js pour fournir une interface utilisateur
 
 ### Prérequis
 
-- Java 17 ou supérieur
+- Java 17 
 - Node.js (pour le frontend React)
 - MySQL
 - Maven
