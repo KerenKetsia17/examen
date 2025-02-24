@@ -4,8 +4,8 @@ Ce projet est une application JEE pour gérer les microservices étudiants et le
 
 ## Fonctionnalités
 
-- **Gestion des étudiants** : Création, lecture, mise à jour et suppression des étudiants.
-- **Gestion des classes** : Création, lecture, mise à jour et suppression des classes.
+- **Gestion des étudiants** : Création, lecture des étudiants.
+- **Gestion des classes** : Création, lecture des classes.
 - **Service Eureka** : Découverte de services pour la communication entre les microservices.
 
 ## Architecture
