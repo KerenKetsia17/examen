@@ -1,4 +1,3 @@
-// AddPage.js (Page de sélection)
 import React from 'react';
 import { Link } from "react-router-dom";
 

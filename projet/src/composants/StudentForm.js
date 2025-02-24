@@ -11,7 +11,7 @@ const StudentForm = () => {
   const [classes, setClasses] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8082/api/classes')  // Charge les classes disponibles
+    axios.get('http://localhost:8082/api/classes')  
       .then(response => setClasses(response.data))
       .catch(error => console.error(error));
   }, []);
@@ -27,9 +27,23 @@ const StudentForm = () => {
       classe,
       archive: false
     };
-    // Ajouter l'étudiant avec les valeurs du formulaire
-    console.log(student);
+  
+    axios.post('http://localhost:8083/api/students', student) // URL de l'API pour ajouter un étudiant
+      .then(response => {
+        console.log('Étudiant ajouté avec succès :', response.data);
+        // Réinitialiser le formulaire
+        setFirstName('');
+        setLastName('');
+        setEmail('');
+        setPhoneNumber('');
+        setRegistrationNumber('');
+        setClasse('');
+      })
+      .catch(error => {
+        console.error('Erreur lors de l\'ajout de l\'étudiant :', error);
+      });
   };
+  
 
   return (
     <div>
