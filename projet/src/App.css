@@ -1,0 +1,104 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #5d9f74, #f9d365);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  text-align: center;
+  background: #e7d2d2;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;  /* Réduction de la taille du formulaire */
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000000;
+  font-weight: bold;
+}
+
+button {
+  background-color: #1f8763;
+  color: white;
+  border: none;
+  padding: 10px 20px;  /* Réduction de la taille des boutons */
+  border-radius: 10px;
+  font-size: 14px;  /* Réduction de la taille du texte des boutons */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #2baf77;
+}
+
+.section {
+  margin-top: 30px;
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.8rem; /* Réduction de la taille du titre */
+  color: #333;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-size: 14px; /* Réduction de la taille des labels */
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+select {
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
