@@ -61,3 +61,4 @@ Le frontend est développé avec React.js pour fournir une interface utilisateur
 - MySQL
 - Maven
 
+Difficultés sur  l'ajout des données dans la bd et sur l'interface.
